@@ -88,6 +88,25 @@ body{
     flex-direction: row;
     font-family: 'Playfair Display SC', serif;
 }
+/* footer */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    background-color: #d6e3e3;
+    height: 60px
+    
+}
+
+.footer-content{
+    padding-left: 15px;
+    font-family: 'Playfair Display SC', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 /* Responsiveness for the title */
 @media only screen and (max-width: 500px) {
@@ -102,3 +121,4 @@ body{
         font-size: 20px;
     }
  }
+
