@@ -101,7 +101,6 @@ footer{
 }
 
 .footer-content{
-    padding-left: 15px;
     font-family: 'Playfair Display SC', serif;
     display: flex;
     flex-direction: row;
