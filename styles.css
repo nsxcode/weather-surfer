@@ -1,0 +1,104 @@
+/* Set the background color */
+body{
+    background-color: #ebf2f1;
+}
+
+/* For the main title */
+.title{
+    font-family: 'WindSong', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 65px;
+}
+
+/* input container */
+.input{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 55px;
+}
+
+/* input box */
+.inputbox{
+    background-color: #f7f5f2;
+    border-radius: 15px 0px 0px 15px;
+    width: 60%;
+    border-style: solid;
+    border-color: #d6e3e3;
+    border-right: none;
+    padding-left: 10px;
+    box-shadow: 2px 2px #c2d6d5;
+    
+}
+
+/* button */
+.button{
+    font-family: 'Playfair Display SC', serif;
+    background-color: #d6e3e3;
+    padding: 15px;
+    border: none;
+    box-shadow: 2px 2px #c2d6d5;
+}
+
+/* Weather info container */
+.weather-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+/* City Name */
+.weather-info .city{
+    font-family: 'Playfair Display SC', serif;
+}
+
+/* Icon of the weather */
+.weather-info .icon {
+    background-color: #c6d5d5;
+    border-radius: 50%;
+}
+
+/* weather description */
+.weather-info .description{
+    text-transform: capitalize;
+    font-family: 'Playfair Display SC', serif;
+    color: #516160;
+}
+
+/* temperature */
+.weather-info .temp{
+    font-family: 'Playfair Display SC', serif;
+    color: #516160;
+}
+
+/* feels like temperature */
+.weather-info .feelsLike{
+    font-family: 'Playfair Display SC', serif;
+    color: #516160;
+}
+
+/* Radio button styling */
+.radiobtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-direction: row;
+    font-family: 'Playfair Display SC', serif;
+}
+
+/* Responsiveness for the title */
+@media only screen and (max-width: 500px) {
+   .title{
+       font-size: 30px;
+   }
+}
+
+/* Responsiveness for the "Weather In ... "  */
+@media only screen and (max-width: 356px) {
+    h1 {
+        font-size: 20px;
+    }
+ }
