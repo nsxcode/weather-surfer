@@ -14,6 +14,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&family=Vidaloka&family=WindSong&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- page title -->
+    <h1 class="title">Weather Surfer</h1>
+    <!-- Radio Button -->
+    <div id="radio" class="radiobtn">
+        <form>
+            <p>Display temperature in: </p>
+            <label>
+              <input name="tempUnit" type="radio" value="metric" checked>Celcius
+            </label>
+            <label >
+              <input  name="tempUnit" type="radio" value="imperial">Farenheit
+            </label>
+        </form>
+    </div>
+    <!-- User Input -->
+    <div class="input">
+        <!-- Get user input -->
+         <input id="userInputCity" class="inputbox" type="text" placeholder="Enter a City">
+        <button  class="button" type="submit" onclick="">Get Weather</button>
+        
+    </div>
+   
     
 </body>
 </html>
