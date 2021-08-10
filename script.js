@@ -4,6 +4,9 @@
     https://www.youtube.com/watch?v=WZNG8UomjSI
 */
 
+let tempertureUnit = ''; 
+let marker = '';
+
 const getWeatherInfo = (event)  => {
     // Get the user input
     const cityInput = document.getElementById("userInputCity").value;
@@ -12,10 +15,20 @@ const getWeatherInfo = (event)  => {
     //then reset user input to empty string
     document.getElementById("userInputCity").value = "";
 
+    //Check which radio button is checked
+    const unitOfTemp = document.getElementsByName('tempUnit')
+    if(unitOfTemp[0].checked){
+        tempertureUnit = 'metric';
+        marker = '℃';
+    }
+    else{
+       tempertureUnit = 'imperial';
+       marker = '℉';
+    }
+
     // attributes that will be later added to the API URL
     const API_KEY = 'c4fbf5081c822eb86e929a167a3c059c';
     const city = cityInput;
-    let tempertureUnit = 'metric'; 
 
     //Create the URL and fetch the info
     const WEATHER_URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${tempertureUnit}&appid=${API_KEY}`;
