@@ -34,5 +34,15 @@ const getWeatherInfo = (event)  => {
 }
 
 const displayWeather = (data) => {
-    
+    // the const {} syntax works because it helps destructure information from the object.
+    //getting the information from the api
+    const {name} = data;
+    const {temp, feels_like} = data['main']
+    const {icon, description} = data['weather']['0']
+    //get the elements class name from index.html
+    document.querySelector(".city").innerHTML = "Weather in " + name;
+    document.querySelector(".icon").src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+    document.querySelector(".description").innerHTML = description;
+    document.querySelector(".temp").innerHTML = "Temperature: " + temp + ' ' + marker;
+    document.querySelector(".feelsLike").innerHTML = "Feels like: " + feels_like + ' ' + marker;
 }
